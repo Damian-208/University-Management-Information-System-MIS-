@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <title>Roster</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <a href="./advdash.html">Dashboard</a>
+        <a href="./roster.html">Roster</a>
+        <a href="./registration.html">Registration</a>
+      </nav>
+    </div>
+    <div id="roster">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Number</th>
+                    <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    for (var count = 0; count <= 10; ++count) {
+                        document.writeln("<tr><td>" + Math.floor(Math.random() * 10000000) + "</td><td>" + Math.random() * 4 + "</td></tr>");
+                    }
+                </script>
+            </tbody>
+        </table>
+    </div>
+  </body>
+</html>

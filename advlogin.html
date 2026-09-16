@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenCode Academy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  </div>
+  <form>
+    <div class="loginbox">
+      <h3 id="log_p">OpenCode Academy</h3>
+      <br>
+      <div class="user">
+        <label>Advisor ID</label>
+        <input id="user" name="user" type="text" class="userb" required>
+      </div>
+      <br>
+      <div class="pass">
+        <label>Password</label>
+        <input id="pass" name="pasw" type="password" class="passb" required>
+      </div>
+      <br>
+        <button type="button" id="logbutt" onclick="login()">Sign in</button>
+        <a href="./index.html" id="cr_ac">Student</a>
+    </div>
+    <script>
+        function login() {
+            var username = document.getElementsByName('user')[0].value;
+            var password = document.getElementsByName('pasw')[0].value;
+            if (username === '0975523' && password === '123') {
+                window.location.href = 'advdash.html';
+            } else if(password != '123' && username==='0975523') {
+                alert('You entered the wrong password!');
+            }else if(username != '0975523' && password === '123'){
+                alert('You entered the wrong advisor ID!')
+            }else if(username != 'admin' && password != '123'){
+                alert('Invalid advisor ID and Password!')
+            }
+        }
+    </script>
+  </form>
+</body>
+</html>

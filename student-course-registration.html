@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Course Registration</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Select 2 CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Modernize js -->
+    <script src="js/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper bg-ash">
+        <!-- Header Menu Area Start Here -->
+         <div id="loadNavbar"></div>
+         <!-- Header Menu Area End Here -->
+         <!-- Page Area Start Here -->
+         <div class="dashboard-page-one">
+             <!-- Sidebar Area Start Here -->
+             <div id="loadSidebar"></div>
+             <!-- Sidebar Area End Here -->
+            <div class="dashboard-content-one">
+                <!-- Breadcubs Area Start Here -->
+                <div class="breadcrumbs-area">
+                    <ul>
+                        <li>
+                            <a href="student-dashboard.html">Home</a>
+                        </li>
+                        <li>Course Registration</li>
+                    </ul>
+                </div>
+                <!-- Breadcubs Area End Here -->
+
+                    <!-- Class Routine Area Start Here -->
+                    <div class="row">
+                        <div class="col-8-xxxl col-12">
+                            <div class="card height-auto" >
+                                <div class="card-body">
+                                    <div class="heading-layout1">
+                                        <div class="item-title">
+                                            <h3>Available Courses</h3>
+                                        </div>
+                                        <div class="dropdown show">
+                                            
+    
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="table-responsive">
+                                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><table class="table display data-table text-nowrap dataTable no-footer" id="DataTables_Table_0" role="grid">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Course" style="width: 138.703px;">Course</th>
+                                                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Pre-Requisite" style="width: 138.703px;">Status</th>
+                                                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Pre-Requisite" style="width: 138.703px;">Pre-Requisite</th>
+                                                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Status" style="width: 138.703px;">P.R.Status</th>
+                                                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Add" style="width: 138.703px;"></th>
+                                                
+
+                                                </thead>
+                                            <tbody>
+                                                
+                                                <tr role="row" class="register-fail">
+                                                    <td class="register-course">CMPE436</td>
+                                                    <td class="status" id="status1">Failed</td>
+                                                    <td class="register-prerequisite-course">CMPE383</td>
+                                                    <td class="status" id="status4">Passed</td>
+                                                    <td>Mandatory
+                                                    <!-- is removed when class name == register fail 
+                                                    ><input type="checkbox" id="course4" name="course4" value="course4">
+                                                    -->
+                                                </td>
+                                                <tr role="row" class="register-pass">
+                                                    <td class="register-course">CMPE485</td>
+                                                    <td class="status" id="status1">Passed</td>
+                                                    <td class="register-prerequisite-course">CMPE372</td>
+                                                    <td class="status" id="status2">Passed</td>
+                                                    <td><input type="checkbox" id="course2" name="course2" value="course2"></td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr role="row" class="register-pass">
+                                                    <td class="register-course">CMPE454</td>
+                                                    <td class="status" id="status1">Passed</td>
+                                                    <td class="register-prerequisite-course">CMPE361</td>
+                                                    <td class="status" id="status3">Passed</td>
+                                                    <td><input type="checkbox" id="course3" name="course3" value="course3"></td>
+
+                                                    
+                                                    
+                                                </tr>
+                                                <tr role="row" class="register-fail">
+                                                    <td class="register-course">CMPE453</td>
+                                                    <td class="status" id="status1">Passed</td>
+                                                    <td class="register-prerequisite-course">CMPE346</td>
+                                                    <td class="status" id="status4">Failed</td>
+                                                    <td>Mandatory
+                                                    <!-- is removed when class name == register fail 
+                                                    ><input type="checkbox" id="course4" name="course4" value="course4">
+                                                    -->
+                                                </td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr role="row" class="register-pass">
+                                                    <td class="register-course">CMPE415</td>
+                                                    <td class="status" id="status1">Passed</td>
+                                                    <td class="register-prerequisite-course">CMPE339</td>
+                                                    <td class="status" is="status5">Passed</td>
+                                                    <td><input type="hidden" name="register-course" value="1">
+                                                        <input type="checkbox" name="register-course" id="register-course" value="0" /></td>
+                                                    
+                                                    
+                                                </tr></tbody>
+                                                
+                                        </table>
+                                        <button class="btn-add" onclick="registrationAdd()" type="button" >Add</button>
+                                        
+                                        
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-8-xxxl col-12">
+                            <div class="card height-auto" >
+                                <div class="card-body">
+                                    <div class="heading-layout1">
+                                        <div class="item-title">
+                                            <h3>Registered Courses</h3>
+                                        </div>
+                                        <div class="dropdown show">
+
+                                        </div>
+                                    </div>
+                                    
+                                    <!--filled with failed courses, without checkbox confirmation-->
+                                    <div hidden class="table-responsive" id="added-registered-courses">
+                                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><table class="table display data-table text-nowrap dataTable no-footer" id="DataTables_Table_0" role="grid">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Course" style="width: 138.703px;">Course</th>
+                                                </thead>
+                                            <tbody>
+                                                
+                                            <!--<tr role="row" class="registered-new">
+                                                    <td class="register-course" id="course1">CMPE235</td>
+                            
+                                                    <td><input type="checkbox" id="course1" name="course1" value="course1"></td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr role="row" class="registered-new">
+                                                    <td class="register-course">CMPE236</td>
+                            
+                                                    <td><input type="checkbox" id="course2" name="course2" value="course2"></td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr role="row" class="registered-new">
+                                                    <td class="register-course">CMPE237</td>
+                                    
+                                                    <td><input type="checkbox" id="course3" name="course3" value="course3"></td>
+
+                                                    
+                                                    
+                                                </tr>-->
+                                                <tr role="row" class="registered-failed">
+                                                    <td class="register-course">CMPE436</td>
+                                             
+                                                    
+                                                    
+                                                <tr role="row" class="registered-failed">
+                                                    <td class="register-course">CMPE346</td>
+                                             
+                                 
+
+                                                <tr role="row" class="registered">
+                                                    <td class="register-course">CMPE436</td>
+                                             
+                        
+                                                <tr role="row" class="registered">
+                                                    <td class="register-course">CMPE436</td>
+                             
+                                                <tr role="row" class="registered">
+                                                    <td class="register-course">CMPE436</td>
+                              
+                                            </tbody>
+                                                
+                                        </table>
+                                        
+                                        
+                                </div>
+                                <button class="btn-confirm" onclick="registrationConfirmation()" type="button" >Confirm</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+        <!-- Page Area End Here -->
+    </div>
+    <!-- jquery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Select 2 Js -->
+    <script src="js/select2.min.js"></script>
+    <!-- Scroll Up Js --
+    <script src="js/jquery.scrollUp.min.js"></script>
+    !-- Custom Js -->
+    <script src="js/main.js"></script>
+    <!-- include navbar -->
+    <script src="js/load-navbar.js"></script>
+    <!-- include sidebar -->
+    <script src="js/load-sidebar.js" arg="timetable"></script>
+    <!-- set timetable element in sidebar as active -->
+    <script>document.getElementById("sidebar-course-registration").className = "nav-link menu-active"</script>
+    <script>
+        let checkbox = document.getElementById("register-course").value;
+        function registrationAdd(){
+            document.getElementById("added-registered-courses").hidden=false;
+            
+    }
+    </script>
+
+</body>
+
+</html>

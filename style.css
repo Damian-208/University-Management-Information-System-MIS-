@@ -1,0 +1,314 @@
+*{
+    font-family: Arial;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png")
+}
+
+.loginbox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 3px solid grey;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 15px;
+    width: 400px;
+    height: 450px;
+  
+  }
+  
+  .loginbox a:any-link{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .loginbox a:hover{
+    color: grey;
+  }
+  
+  .pass{
+    position: absolute;
+    left:2%;
+    top: 25%;
+    padding: 20px 0;
+    /*border: 2px solid black;*/
+    width: 320px;
+  }
+  
+  .user{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    padding: 1px 0;
+    /*border: 2px solid black;*/
+    width: 300px;
+  
+  }
+  
+  #log_p{
+    position: absolute;
+    left: 19%;
+    margin: 20px;
+    width: 200px;
+    font-size: 20px
+    /*border: 2px solid black;*/
+  }
+  
+  #logbutt{
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    width: 100px;
+    margin: 10px 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  }
+  
+  #logbutt:hover{
+    background-color: white;
+  }
+  
+  #cr_ac{
+    position: absolute;
+    top: 90%;
+    left: 26%;
+    padding: 10px;
+    width: 171px;
+    font-size: 18px;
+  }
+  
+  .passb, .userb{
+    border-radius: 15px;
+    border: 2px solid grey;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#pay{
+    width: 150px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: lightgrey;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+/* CSS for table responsiveness on small screens */
+@media only screen and (max-width: 600px) {
+  table {
+      width: 100%;
+  }
+
+  table, th, td, tr {
+      display: block;
+  }
+
+  th, td {
+      border: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  tr {
+      margin-bottom: 10px;
+  }
+}
+
+/*.calendar{
+  margin: 0;
+  border: 2px solid white;
+  width: 450px;
+  height: 500px;
+  background-color: lightgrey;
+}
+*/
+.advtime{
+  width: 500px;
+  height: 350px;
+}
+
+.advtasks{
+  margin: 0;
+  width: 450px;
+  height: 350px;
+}
+
+.advinfo{
+  margin: 0;
+  width: 450px;
+  height: 350px;
+}
+
+.advinfo ul{
+  list-style-type: none;
+}
+
+.advinfo li{
+  margin: 20px 20px;
+}
+
+/*--------------------------------------------------------TEST PHASE--------------------------------------------------------*/
+
+.advinfo, .calendar {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.advtime, .advtasks {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+}
+/*------------------------------------Main container for advdash------------------------------------*/
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*.advinfo, .calendar {
+  width: 450px;
+}
+
+.advtime, .advtasks {
+  width: 500px;
+}
+
+.advinfo {
+  margin-right: 20px;
+}
+
+.calendar {
+  margin-bottom: 20px;
+}
+
+.advtasks {
+  margin-right: 20px;
+}
+
+.advtime {
+  margin-top: 0;
+} TO BE LOOKED AT LATER!!!!! */
+/*------------------------------------Navbar Test------------------------------------*/
+.navbar{
+    border: 5px solid grey;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a:any-link{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    width: 50px;
+}
+
+nav a:hover{
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+.navbar label{
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+}
+/*----------------------------Calendar----------------------------*/
+
+.calendar {
+  width: 450px;
+  height: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2px;
+  padding: 5px;
+}
+
+.days div {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.days div.today {
+  background-color: #ccc;
+}
+/*----------------------------Advisor's breaks----------------------------*/
+.advtime img {
+  width: 25px;
+  height: 25px;
+}
+
+.advtime td.clk {
+  text-align: center;
+}
+.advtime td {
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.advtime table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/*----------------------------Roster----------------------------*/
+
+#roster {
+  margin-top: 100px;
+}
